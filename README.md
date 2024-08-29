@@ -34,13 +34,13 @@ This Event Management System is a web application built using Spring Boot, Maven
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/event-management-system.git
-    cd event-management-system
+    git clone https://github.com/KartikLakhotiya/Event-Management-System-Java.git
+    cd Event-Management-System-Java
     ```
 
 2. **Configure the database**:
     - Create a MySQL database named `event_management_system`.
-    - Import the .sql given in the db_sql folder in MySQL Workbench.
+    - Import the .sql file given in the db_sql folder in MySQL Workbench.
     - Update the `application.properties` file located in `src/main/resources` with your MySQL username and password.
 
 3. **Build the project**:
