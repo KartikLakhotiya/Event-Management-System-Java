@@ -1,37 +1,57 @@
-# EXQUISITE - EVENT-MANAGEMNET-SYSTEM
+# Event Management System
 
-PPT : [Click Here](https://docs.google.com/presentation/d/1ChT6H6wb5OIiYuz-tZQBNC8b2-ZIeDcy/edit#slide=id.p1)
-<br>
-Presentation Video : [Click Here](https://fluvid.com/videos/detail/xqrExu_jGks1E4k8Z)
-<br>
-Live Demo Video : [Click Here](https://clipchamp.com/watch/qZ726cMrv92)
-## Steps to run the project in your machine
-1. Download and install spring tool suite in your machine
-2. Clone or download the repository
-3. Extract all the files
-4. After Extracting the file, create a database event_management_system
-5. then open the extracted file in spring tool suite
-6. open the file EventManagementSystemApplication.java in src/main/java/com/app/demo and run the file as spring boot App
-7. Then you have to import the [.sql](https://github.com/GanapathySubramanian/Event-Management-System/tree/master/db_sql) file in mysql workbench, the sql file consists of predumped table data and structure
-8. Open your web browser and type 'localhost:8080'
-9. Hurray! That's it!
+This Event Management System is a web application built using Spring Boot, Maven, and MySQL. The system provides a platform for users to book events and for admins to manage and approve these bookings.
 
-# login credentials
-## ADMIN-LOGIN
-<p>Email : ganapathy2000subramanian@gmail.com</p>
-<p>password : admin@123</p>
+## Features
 
-## USER-LOGIN
-<p>Email : ganapathydaprojects@gmail.com</p>
-<p>password : 123</p>
+### User Features
+- **Event Browsing**: Users can browse available events.
+- **Event Booking**: Users can book events.
+- **Booking Management**: Users can view their booking history and status.
 
-## SUBADMIN-LOGIN
-<p>Email : venky777@gmail.com</p>
-<p>password : 123</p>
+### Admin Features
+- **Event Approval**: Admins can approve or reject event bookings.
+- **Event Management**: Admins can add, update, or delete events.
+- **User Management**: Admins can view and manage registered users.
 
-## SUPERADMIN-LOGIN
-<p>Email : sai@gmail.com</p>
-<p>password : 123</p>
+## Technologies Used
 
+- **Backend**: Spring Boot
+- **Build Tool**: Maven
+- **Database**: MySQL
+- **Frontend**: (Specify if you have used any frontend technologies like Thymeleaf, Angular, etc.)
+- **Other Tools**: (e.g., Lombok, Spring Data JPA, etc.)
 
+## Installation
 
+### Prerequisites
+- Java 11 or higher
+- Maven 3.6+
+- MySQL 8.0+
+- (Any other prerequisites)
+
+### Steps
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/event-management-system.git
+    cd event-management-system
+    ```
+
+2. **Configure the database**:
+    - Create a MySQL database named `event_management_system`.
+    - Import the .sql given in the db_sql folder in MySQL Workbench.
+    - Update the `application.properties` file located in `src/main/resources` with your MySQL username and password.
+
+3. **Build the project**:
+    ```bash
+    mvn clean install
+    ```
+
+4. **Run the application**:
+    ```bash
+    mvn spring-boot:run
+    ```
+
+5. **Access the application**:
+    - The application will be running at `http://localhost:8080`.
